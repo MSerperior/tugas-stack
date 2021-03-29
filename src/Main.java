@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("Hello World");
 		Stack stack = new Stack();
 		stack.fillTestData();
@@ -22,7 +21,8 @@ public class Main {
 				case 2:
 					System.out.println("\n=========================");
 					System.out.println("|  A M B I L   D A T A  |");
-					System.out.println(stack.pop());
+					System.out.print("| Data	: ");
+					stack.pop();			
 					break;
 			
 				case 3:

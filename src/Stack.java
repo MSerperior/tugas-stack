@@ -37,6 +37,6 @@ public class Stack {
 		
 	}
 	public boolean isEmpty() {
-		return false; // to be implemented
+		return (ptr == -1);
 	}
 }
