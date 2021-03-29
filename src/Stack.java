@@ -1,7 +1,7 @@
 
 public class Stack {
 	
-	int stack[] = new int[10];
+	int stack[] = new int[10]; //testing stack
 	
 	public void fillTestData() {
 		stack[0] = 3;
