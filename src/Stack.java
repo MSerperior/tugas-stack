@@ -16,7 +16,7 @@ public class Stack {
 	}
 	public void pop() {
 		if(!this.isEmpty()) {
-			this.ptr--;
+			System.out.println(this.ptr--);
 		} else {
 			System.out.println("Stack sudah kosong");
 		}
@@ -34,6 +34,6 @@ public class Stack {
 		
 	}
 	public boolean isEmpty() {
-		return true; // to be implemented
+		return (ptr == -1);
 	}
 }
