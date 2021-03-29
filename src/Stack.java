@@ -14,11 +14,13 @@ public class Stack {
 	public void push() {
 		
 	}
-	public void pop() {
+	public int pop() {
 		if(!this.isEmpty()) {
 			this.ptr--;
+			return stack[ptr];
 		} else {
-			System.out.println("Stack sudah kosong");
+			System.out.println("Stack kosong");
+			return -1;
 		}
 		
 	}
@@ -29,11 +31,12 @@ public class Stack {
 		while(!this.isEmpty()) {
 			this.pop();
 		}
+		System.out.println("stack baru telah dibuat");
 	}
 	public void isFull() {
 		
 	}
 	public boolean isEmpty() {
-		return true; // to be implemented
+		return false; // to be implemented
 	}
 }
