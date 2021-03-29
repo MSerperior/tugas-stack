@@ -22,7 +22,8 @@ public class Main {
 					System.out.println("\n=========================");
 					System.out.println("|  A M B I L   D A T A  |");
 					System.out.print("| Data	: ");
-					stack.pop();			
+					int data = stack.pop();
+					System.out.println(data + " ".repeat(14-(String.valueOf(data).length())) + "|");
 					break;
 			
 				case 3:

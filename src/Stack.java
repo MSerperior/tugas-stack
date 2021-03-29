@@ -16,8 +16,7 @@ public class Stack {
 	}
 	public int pop() {
 		if(!this.isEmpty()) {
-			this.ptr--;
-			return stack[ptr];
+			return stack[ptr--];
 		} else {
 			System.out.println("Stack kosong");
 			return -1;
