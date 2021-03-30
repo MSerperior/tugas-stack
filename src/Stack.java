@@ -1,7 +1,7 @@
 
 public class Stack {
-	int ptr;
-	int stack[] = new int[10]; //testing stack
+	private int ptr;
+	private int stack[] = new int[10]; //testing stack
 	
 	public void fillTestData() {
 		this.ptr = 4;
@@ -35,7 +35,13 @@ public class Stack {
 	public void isFull() {
 		
 	}
-	public boolean isEmpty() {
+	private boolean isEmpty() {
 		return (ptr == -1);
+	}
+	public int[] getStack(){
+		return this.stack;
+	}
+	public int getPtr(){
+		return this.ptr;
 	}
 }

@@ -23,7 +23,7 @@ public class Main {
 					System.out.println("|  A M B I L   D A T A  |");
 					System.out.print("| Data	: ");
 					int data = stack.pop();
-					System.out.println(data + " ".repeat(14-(String.valueOf(data).length())) + "|");
+					System.out.println(data + " ".repeat(14-(String.valueOf(data).length())) + "|\n");
 					break;
 			
 				case 3:
@@ -34,6 +34,7 @@ public class Main {
 				case 4:
 					System.out.println("\n=========================");
 					System.out.println("|  S E M U A   D A T A  |");
+					show(stack);
 					break;
 			
 				case 5:
@@ -63,6 +64,15 @@ public class Main {
 		System.out.println("|4.| Lihat Semua Data   |");
 		System.out.println("|5.| Buat Stack Baru    |");
 		System.out.println("|6.| Keluar             |");
+	}
+
+	private static void show(Stack stack){
+		int[] st = stack.getStack();
+		for (int i = stack.getPtr(); i >=0; i--) {
+			System.out.println("|‾‾‾‾‾|");
+			System.out.printf("| %- 3d |\n",st[i]);
+		}
+		System.out.println("‾‾‾‾‾‾‾");
 	}
 
 }
