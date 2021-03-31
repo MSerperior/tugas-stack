@@ -7,9 +7,9 @@ public class Main {
 		Stack stack = new Stack();
 		stack.fillTestData();
 		Scanner input = new Scanner(System.in);
-		menu();
 		boolean exit = true;
 		while (exit) {
+			menu();
 			System.out.print("Menu yang dipilih : ");
 			int in = input.nextInt();
 			switch (in) {
