@@ -9,7 +9,7 @@ public class Stack {
 		stack[1] = 6;
 		stack[2] = 5;
 		stack[3] = 2;
-		stack[4] = 7;
+		stack[4] = 70;
 	}
 	public void push() {
 		
