@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		int data;
 		Stack stack = new Stack();
 		stack.fillTestData();
 		Scanner input = new Scanner(System.in);
@@ -16,22 +16,27 @@ public class Main {
 				case 1:
 					System.out.println("\n=========================");
 					System.out.println("| T A M B A H   D A T A |");
-                                        System.out.println("Silahkan masukkan data : " );
-                                        int data = input.nextInt();
+                    System.out.println("| Masukkan data :       |");
+                    data = input.nextInt();
+                    stack.push(data);
 					break;
 			
 				case 2:
 					System.out.println("\n=========================");
 					System.out.println("|  A M B I L   D A T A  |");
 					System.out.print("| Data	: ");
-					int data = stack.pop();
-					System.out.println(data + " ".repeat(14-(String.valueOf(data).length())) + "|\n");
+					data = stack.pop();
+					if(data == -1) {
+						System.out.println("stack kosong" + " ".repeat(2) + "|\n");
+					}else {
+						System.out.println(data + " ".repeat(14-(String.valueOf(data).length())) + "|\n");
+					}
 					break;
 			
 				case 3:
 					System.out.println("\n=========================");
 					System.out.println("|D A T A   T E R A T A S|");
-                                        System.out.println("" + stack.peek());
+                    System.out.println("|Data : " + stack.peek() + " ".repeat(14) + "|\n");
 					break;
 			
 				case 4:
@@ -42,7 +47,7 @@ public class Main {
 			
 				case 5:
 					System.out.println("\n=========================");
-					System.out.println("|	B U A T   B A R U	|");
+					System.out.println("|   B U A T   B A R U   |");
 					stack.clear();
 					break;
 			

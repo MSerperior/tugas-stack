@@ -12,40 +12,39 @@ public class Stack {
 		stack[4] = 70;
 	}
 	public void push(int i) {
-                if (isFull()){
-                    System.out.println("Stack penuh!");
-                
-                } else {
-                System.out.println("Data : " + i);
-                stack[++ptr] = i;
-                }
+        if (isFull()){
+            System.out.println("Stack penuh!");
+        
+        } else {
+        System.out.println("Data : " + i);
+        stack[++ptr] = i;
         }
+    }
 	public int pop() {
 		if(!this.isEmpty()) {
 			return stack[ptr--];
 		} else {
-			System.out.println("Stack kosong");
 			return -1;
 		}
 		
 	}
 	public int peek() {
-                if(!this.isEmpty()){
-                    return stack[ptr];
-                } else {
-                    return -1;
-                }
+        if(!this.isEmpty()){
+            return stack[ptr];
+        } else {
+            return -1;
         }
+    }
 	public void clear() {
 		while(!this.isEmpty()) {
 			this.pop();
 		}
-		System.out.println("stack baru telah dibuat");
+		System.out.println("|stack baru telah dibuat|");
 	}
-	public void isFull() {
-		
+	public boolean isFull() {
+		return this.ptr == this.stack.length;
 	}
-	private boolean isEmpty() {
+	public boolean isEmpty() {
 		return (ptr == -1);
 	}
 	public int[] getStack(){
