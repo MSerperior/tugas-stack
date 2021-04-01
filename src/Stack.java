@@ -42,7 +42,7 @@ public class Stack {
 		System.out.println("|stack baru telah dibuat|");
 	}
 	public boolean isFull() {
-		return this.ptr == this.stack.length;
+		return this.ptr == this.stack.length-1;
 	}
 	public boolean isEmpty() {
 		return (ptr == -1);
