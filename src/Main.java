@@ -16,6 +16,8 @@ public class Main {
 				case 1:
 					System.out.println("\n=========================");
 					System.out.println("| T A M B A H   D A T A |");
+                                        System.out.println("Silahkan masukkan data : " );
+                                        int data = input.nextInt();
 					break;
 			
 				case 2:
