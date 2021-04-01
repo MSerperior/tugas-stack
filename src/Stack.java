@@ -11,9 +11,15 @@ public class Stack {
 		stack[3] = 2;
 		stack[4] = 70;
 	}
-	public void push() {
-		
-	}
+	public void push(int i) {
+                if (isFull()){
+                    System.out.println("Stack penuh!");
+                
+                } else {
+                System.out.println("Data : " + i);
+                stack[++ptr] = i;
+                }
+        }
 	public int pop() {
 		if(!this.isEmpty()) {
 			return stack[ptr--];
@@ -23,9 +29,13 @@ public class Stack {
 		}
 		
 	}
-	public void peek() {
-		
-	}
+	public int peek() {
+                if(!this.isEmpty()){
+                    return stack[ptr];
+                } else {
+                    return -1;
+                }
+        }
 	public void clear() {
 		while(!this.isEmpty()) {
 			this.pop();
