@@ -29,6 +29,7 @@ public class Main {
 				case 3:
 					System.out.println("\n=========================");
 					System.out.println("|D A T A   T E R A T A S|");
+                                        System.out.println("" + stack.peek());
 					break;
 			
 				case 4:
